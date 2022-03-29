@@ -9,7 +9,7 @@ const App: React.FC = () => {
         {
           router.map((r) => {
             return (
-                <Route key={r.name} path={r.path} element={r.component} index={r.name==='main'} />
+                <Route key={r.name} path={r.path} element={<r.component />} />
             );
         })
         }
